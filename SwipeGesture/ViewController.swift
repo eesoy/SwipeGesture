@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         //제스처 등록 (두 손가락)
         let swipeUpMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
         swipeUpMulti.direction = UISwipeGestureRecognizerDirection.up
-        swipeUpMulti.numberOfTouchesRequired = numOfTouchs //멀티 터치 스와이프 제스처 등록
+        swipeUpMulti.numberOfTouchesRequired = numOfTouchs //멀티 터치 스와이프 제스처 등록 (시뮬레이터 테스트 시 alt + shift)
         self.view.addGestureRecognizer(swipeUpMulti)
         
         let swipeDownMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
